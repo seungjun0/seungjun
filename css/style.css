@@ -1,0 +1,294 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+}
+.header {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.header a {
+    text-decoration: none;
+    color: #000000
+}
+ul.list {
+    float: left;
+    margin: 0 1%;
+    margin-top: 0;
+    zoom: 1;
+    box-sizing: border-box;
+}
+.ep_ng, .ep_pg_body, .ep_pg_main, .ep_pg_block, .op_pg_grid, .ep_pg_play, .list, .item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lecture_arrow_area {
+    position: relative;
+    left: 50%;
+    margin-left: -105px;
+    top: 7px;
+    height: 16px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.lecture_arrow_area li {
+    float: left;
+}
+a, a:link {
+    text-decoration: none;
+    color: #585858;
+}
+.lecture_icon_pre {
+    background: url("https://portal.dongyang.ac.kr/eXPortal/dtis/images/arrow_pre.png") no-repeat 0 1px;
+    width: 10px;
+    height: 17px;
+    display: inline-block;
+}
+.blind {
+    visibility: hidden!important;
+    overflow: hidden!important;
+    position: absolute!important;
+    width: 0!important;
+    height: 0!important;
+    font-size: 0!important;
+    line-height: 0!important;
+    color: transparent!important;
+    background-color: transparent!important;
+}
+.lecture_arrow_area li.lecture_day {
+    font-size: 17px;
+    color: #162c51;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    list-style: none;
+}
+ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.lecture_icon_next {
+    background: url("https://portal.dongyang.ac.kr/eXPortal/dtis/images/arrow_next.png") no-repeat 0 1px;
+    width: 10px;
+    height: 17px;
+    display: inline-block;
+}
+.board_main {
+    width: 100%;
+    table-layout: fixed;
+}
+legend, caption, .blind {
+    visibility: hidden;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.board_main thead tr th {
+    height: 16px;
+    padding: 6px 0 4px 0;
+    background: #ececec;
+    border: 1px solid #d6d6d6;
+    font-size: 15px;
+    color: #888888;
+    font-weight: bold;
+    text-align: center;
+}
+.board_main tbody {
+    border-bottom: 1px solid #d6d6d6;
+}
+.ep-section {
+    clear: both;
+    display: table;
+    width: 100%;
+    border: none;
+}
+.ep-subsection {
+    clear: both;
+    display: table-cell;
+    vertical-align: top;
+}
+div, p, span, li, table td {
+    word-break: break-all;
+}
+.board_area5 {
+    height: 192px;
+    overflow-y: auto;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #d6d6d6;
+}
+.portlet-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 10;
+}
+.mod {
+    position: relative;
+    margin: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    height: 250px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0,0,0,0.2);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+.column.side {
+    width: 25%;
+}
+.column.middle {
+    width: 50%;
+}
+#menu39_obj1217.on {
+    animation-name: ani_5;
+    animation-direction: 0.7s;
+    animation-fill-mode: forwards;
+}
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    left: -9999px;
+    display: none;
+}
+#_contentBuilder ._fnctWrap {
+    height: 100%;
+}
+.wrap_information > ul {
+    display: flex;
+    align-items: center;
+}
+.wrap_information .title {
+    margin-left: 20px;
+}
+.wrap_information > ul > li.active .title a {
+    color: black;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-right: 40px;
+    transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+}
+.wrap_information > ul > li.active .list, .wrap_information > ul > li.active .more {
+    display: block;
+}
+.wrap_information .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap_information .list ul li {
+    width: 48%;
+    margin-left: 2%;
+}
+.wrap_information a.subject {
+    display: block;
+    padding: 5px 0;
+}
+.wrap_information .con {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.wrap_information .subjectText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    color: #585858;
+    line-height: 1.2;
+    width: calc(100% - 65px);
+}
+.wrap_information .subjectText span {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wrap_information .subjectText span:before {
+    content: "";
+    display: inline-block;
+    background-color: #f7d1aa;
+    width: 0;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.wrap_information .subjectText span strong {
+    position: relative;
+}
+.wrap_information .content {
+    display: none;
+}
+.wrap_information .date {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1;
+    width: 65px;
+}
+.wrap_information .date .dD {
+    font-size: 18px;
+    color: #585858;
+    font-weight: 600;
+}
+.wrap_information .date .yM {
+    font-size: 13px;
+    color: #aaaaaa;
+    font-weight: 300;
+    margin-left: 8px;
+}
+.wrap_information a.subject:after {
+    content: "";
+    display: block;
+    width: calc(100% - 65px);
+    height: 1px;
+    background: #dcdcdc;
+    margin-left: 65px;
+}
+#_contentBuilder ._fnctWrap {
+    height: 100%;
+}
+#menu39_obj1217.on {
+    animation-name: ani_5;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+.footer {
+    background-color: rgb(0,0,0,0.2);
+    padding: 10px;
+    margin-top: 1010px;
+    text-align: left;
+}
