@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<title>DMU Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+}
+.header {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.header a {
+    text-decoration: none;
+    color: #000000
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0,0,0,0.5);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#container {
+    position: relative;
+    clear: both;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.wsection {
+    position: relative;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.snprg_lb_tit {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    color: black;
+}
+.snprg_lb_tit img {
+    margin-right: 8px;
+}
+.sbrdf_label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 98px;
+    height: 12px;
+    margin: auto 0;
+    padding-top: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    line-height: normal;
+}
+.sbrdf_select {
+    padding-top: 4px;
+    padding-bottom: 3px;
+    margin: 0;
+    padding: 5px 0 4px 0;
+    font-size: 13px;
+    color: #3c3c3c;
+    border: 1px solid #d5d5d5;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+.sbrdf_sort .sbrdf_select {
+    min-width: 164px;
+}
+.sbrd_feach_w {
+    position: relative;
+    clear: both;
+    margin-top: 10px;
+    padding-left: 98px;
+}
+label {
+    cursor: text;
+}
+.iptxt_w {
+    position: relative;
+    padding: 0 10px;
+    border: 1px solid #d5d5d5;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+}
+.iptxt_w .iptxt {
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+.icon_vital.dtm {
+    top: 68px;
+}
+.iptxt_w .textarea {
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+.sbrdf_content .iptxt_w {
+    padding-right: 0;
+}
+.sbrdf_content .textarea {
+    height: 146px;
+    padding-top: 10px;
+}
+.sbrdf_attachfile .iptxt_w {
+    padding-right: 0;
+    text-align: right;
+    font-size: 0;
+}
+.sbrdf_atc_tit {
+    display: inline-block;
+    height: 23px;
+    padding: 0 20px 0 21px;
+    font-size: 11px;
+    color: #555;
+    line-height: 23px;
+    border-left: 1px solid #e8e9e9;
+    background: #f0f0f0;
+}
+button {
+    border: none;
+}
+.sbrdf_atfn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 23px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #555;
+    white-space: nowrap;
+}
+.shd_lq_desc {
+    clear: both;
+    margin: 9px 0 50px 0;
+    padding: 0 0 0 99px;
+}
+.shd_lq_desc li {
+    padding-left: 7px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: #828282;
+}
+.login_button_set {
+    text-align: center;
+    margin: 0 auto;
+}
+.login_button_set button.sbsbt_blue, .login_button_set button.sbsbt_midgray, .login_button_set button.sbsbt_lightgray, .login_button_set button.sbsbt_gray {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 14px;
+    margin: 0 3px;
+}
+.sbsbt_blue {
+    background: #3783e0;
+    color: white;
+}
+.scss_contents {
+    float: right;
+    width: 735px;
+}
+.footer {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html">
+            <h1><img src="../images/logo.png"></h1>
+        </a> 
+        <p>DMU Guide</p>
+      </div>
+       
+      <div class="topnav">
+        <a href="food.html">먹거리</a>
+        <a href="convenience.html">편의시설</a>
+        <a href="inquiry.html">고객센터</a>
+      </div>
+      <div id="container">
+        <div class="wsection">
+      <h4 class="snprg_lb_tit"><img src="../images/blue.gif">문의내용 작성</h4>
+<div class="sbrdf_sort" style="padding-top: 10px;">* 전화 문의는 010-123-4567로 문의 주시기 바랍니다.</div>
+<div class="sbrd_feach_w sbrdf_sort">
+						<label class="sbrdf_label" for="bigGubun">분류선택</label>
+						<select id="bigGubun" name="bigGubun" class="sbrdf_select" title="분류선택 대분류">
+							<option value="00">대분류</option>
+							
+								<option value="01">
+									회원정보문의
+								</option>
+								<option value="02">
+									추가 의견
+								</option>
+						</select>
+						<select id="smallGubun" name="smallGubun" class="sbrdf_select" title="분류선택 소분류"><option value="00" 'selected'=""> 소분류 </option></select>
+					</div>
+                    <div class="sbrd_feach_w sbrdf_title">
+						<label class="sbrdf_label" for="subject">제목</label>
+						<span class="iptxt_w"><input type="text" id="subject" name="subject" value="" class="iptxt"></span>
+					</div>
+                    <div class="sbrd_feach_w sbrdf_content">
+						<label class="sbrdf_label" for="content">문의내용</label>
+						<span class="iptxt_w"><textarea cols="30" rows="10" class="textarea" name="content" id="content" onkeyup="chk_byte(this, 4000);"></textarea></span>
+					</div>
+                    <div class="sbrd_feach_w sbrdf_attachfile">
+						<label class="sbrdf_label" for="vod_url">파일첨부</label>
+						<span class="iptxt_w">
+							<button type="button" class="sbrdf_atc_tit" onclick="javascript:goImageUp();" title="파일 첨부 새창 열림">찾아보기...</button>
+							<input type="hidden" class="iptxt" name="vod_url" id="vod_url" value="">
+							<span class="sbrdf_atfn" id="imgUrl"></span>
+						</span>
+					</div>
+                    <ul class="shd_lq_desc">
+						<li>파일명이 영문 또는 숫자로 된 파일만 확인이 가능합니다.</li>
+						<li>JPG 파일로 전환하여 보내주세요.</li>
+						<!-- 2017. 7. 26 외국인회원가입 절차 변경-->
+						<!-- <li>ID삭제, 외국인회원 가입시 신분증사본이 필수입니다.</li> -->
+						<li>파일 첨부 불가시 팩스 02-123-4567 을 이용해 주세요.</li>
+					</ul>
+                    <div class="login_button_set">
+						<button class="sbsbt_blue" id="send" name="send">문의하기<i class="btico_arrow"></i></button>
+					</div>
+                </div>
+            </div>
+      <div class="footer">
+        <p>DMU Guide</p>
+        </div>
+      </body>
+      </html>

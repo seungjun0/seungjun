@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMU Guide</title>
+    <style>
+      * {
+        font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.header {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.header a {
+    text-decoration: none;
+    color: #000000
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0,0,0,0.5);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.column.middle {
+    height: 70vh;
+    display: flex;
+}
+.column.middle ul li {
+    float: left; 
+    list-style-type: none;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-item {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    margin: 0 50px;
+}
+.food-item img {
+    width: 150%;
+}
+.profile {
+    position: relative;
+}
+.food-profile {
+    left: 0;
+    height: 200px;
+    color: black;
+}
+.food-profile h2 {
+    font-size: 20px;
+}
+.food-profile p {
+    color: black;
+    font-size: 13px;
+    min-width: 180px;
+    max-height: 0;
+}
+.footer {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+    padding: 10px;
+    text-align: center;
+}
+.mid p{
+    margin-left: 130px;
+    margin-right: 130px;
+    border-bottom: 5px solid rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    padding: 2em;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html">
+            <img src="../images/logo.png">
+        </a>
+        <p>DMU Guide</p>
+      </div>
+      <div class="topnav">
+        <a href="food.html">먹거리</a>
+        <a href="convenience.html">편의시설</a>
+        <a href="inquiry.html">고객센터</a>
+      </div> 
+      <div class="mid">
+        <p>학교 주변 편의시설 소개</p>
+      </div>
+      <div class="column middle">
+          <ul class="food">
+              <li class="food-item">
+                <div class="profile">
+                  <img src="../images/xntja.jfif" >
+                  <div class="food-profile">
+                    <h2>TWOSOME PLACE</h2>
+                    <p>서울 구로구 경인로47길 34-1<br>02-2615-7557<br>매일 11:00 - 20:00<br>카페</p>
+                  </div>
+                </div>
+              </li>
+              <li class="food-item">
+                <div class="profile">
+                  <img src="../images/wpwn.jfif">
+                  <div class="food-profile">
+                    <h2>제주몰빵</h2>
+                    <p>서울 구로구 고척동 62-160 2층<br>월 ~ 금 09:00 - 21:00<br>토 ~ 일 10:00 - 20:00<br>카페</p>
+                  </div>
+                </div>
+              </li>
+              <li class="food-item">
+                <div class="profile">
+                <img src="../images/dkdltpstm.jfif">
+                <div class="food-profile">
+                    <h2>아이센스리그PC</h2>
+                    <p>서울 구로구 경인로47길 13<br>070-4741-1100<br>24시간 연중무휴<br>PC방</p>
+                  </div>
+                </div>
+              </li>
+              <li class="food-item">
+                <div class="profile">
+                <img src="../images/wpsken.jfif">
+                <div class="food-profile">
+                    <h2>제나두PC방</h2>
+                    <p>서울 구로구 경인로 47길 23 3층<br>0507-1334-3078<br>24시간 연중무휴<br>PC방</p>
+                  </div>
+                </div>
+              </li>
+              <li class="food-item">
+                <div class="profile">
+                <img src="../images/ediya.jfif">
+                <div class="food-profile">
+                    <h2>EDIYA COFFEE</h2>
+                    <p>서울 구로구 경인로47길 18<br>02-2687-8116<br>매일 09:00 - 24:00<br>카페</p>
+                  </div>
+                </div>
+              </li>
+              <li class="food-item">
+                <div class="profile">
+                <img src="../images/zkvp.jpg">
+                <div class="food-profile">
+                    <h2>CAFE DREAM</h2>
+                    <p>서울 구로구 경인로445<br>02-2612-0127<br>매일 08:00 - 17:00<br>카페</p>
+                  </div>
+                </div>
+              </li>
+          </ul>
+      </div>
+      <div class="footer">
+        <p>DMU Guide</p>
+      </div>
+</body>
+</html>
